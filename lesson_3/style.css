@@ -1,0 +1,51 @@
+/* *{
+   color: rgb(12, 12, 12); */
+/* } */
+h2 {
+   color: purple;
+}
+
+.title {
+   color: blue;
+}
+.big-title {
+   color: brown;
+}
+
+.item {
+   color: rgb(128, 0, 77);
+}
+.block {
+   color: darkolivegreen;
+}
+.text {
+   color: black;
+}
+#ukrrel {
+   color: yellowgreen;
+}
+[title] {
+   color: red;
+}
+div.block {
+   color: olivedrab;
+}
+/* div.text {
+   color: aqua;
+} */
+div,
+.text {
+   color: brown;
+}
+.piece-of-article p {
+   color: gray;
+}
+.piece-of-article h1 {
+   color: orangered;
+}
+.piece-of-article ~ h1 {
+   color: rgb(188, 112, 216);
+}
+/* .block + p {
+   color: yellow;
+} */
