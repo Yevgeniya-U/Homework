@@ -1,0 +1,132 @@
+header, footer {
+   font-family: "Montserrat", serif;
+   color: grey;
+   font-weight: 500;
+}
+body {
+   font-family: "Manrope", sans-serif;
+} 
+.title,
+.big-title {
+   font-family: "Oswald";
+   font-size: 25px;
+   font-weight: 700;
+   text-align: center;
+   letter-spacing: 0.2rem;
+}
+.big-title {
+   text-shadow: grey 2px 5px;
+   font-size: 35px;
+}
+.properties {
+   color: darkorange;
+}
+
+h3 {
+   color:blueviolet;
+   font-family: "Oswald";
+   font-size: 20px;
+   font-weight: 500;
+   text-decoration: underline;
+}
+.color-item {
+   color: darkolivegreen;
+   text-decoration: underline;
+   text-decoration-style: dotted;
+   font-weight: 700;
+}
+.blue-text {
+   color: blue;
+}
+.red-text {
+   color: #ff0000;
+}
+.green-text {
+   color: rgb(0, 255, 0);
+}
+.semitransparent-red {
+   color: rgba(255, 0, 0, 0.5);
+}
+.another-green-text {
+   color: hsl(120, 100%, 50%);
+}
+.another-semitransparent-text {
+   color: hsla(0, 100%, 50%, 0.5);
+}
+.text-px {
+   font-size: 20px;
+}
+.text-pt {
+   font-size: 18pt;
+}
+.text-percent {
+   font-size: 35%;
+}
+.text-rem {
+   font-size: 5rem;
+}
+.text-left {
+   text-align: left;
+   text-decoration: line-through;
+}
+.text-right {
+   text-align: right;
+}
+.text-center {
+   text-align: center;
+}
+.text-justify {
+   text-align: justify;
+}
+div.text {
+   line-height: 2;
+}
+.align {
+   color: darkmagenta;
+}
+.fz-multiply-lh {
+   line-height: 3;
+}
+.line-height-percent {
+   line-height: 350%;
+}
+.length {
+   line-height: 12px;
+}
+.line-height-box p {
+   word-spacing: 50%;
+  color: darkblue;
+}
+.word-space {
+   word-spacing: 30%;
+}
+.capital-letters {
+   text-transform: capitalize;
+   text-decoration: underline wavy;
+}
+
+.header-list-2 {
+   text-align: center;
+   }
+.header-list-3 {
+   text-align: right;
+}
+.agrolink-title {
+   font-family: "DM Sans", sans-serif;
+   font-weight: 700;
+   letter-spacing: -1.26px;
+   font-size: 50px;
+}
+.thin-word {
+   font-weight: normal;
+}
+.thick-word {
+   color: #1AAF5B;
+}
+.article {
+   font-family: "DM Sans", sans-serif;
+   font-size: 20px;
+   line-height: 1.4;
+   letter-spacing: -0.5px;
+   opacity: 60%;
+}

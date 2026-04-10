@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://fonts.googleapis.com/css?family=Montserrat:regular,500" rel="stylesheet" />
+   <link href="https://fonts.googleapis.com/css?family=Oswald:regular,500,700" rel="stylesheet" />
+   <link href="https://fonts.googleapis.com/css?family=DM+Sans:regular,700" rel="stylesheet" />
+   <link rel="stylesheet" href="css/fonts.css">
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Урок 4</title>
+</head>
+
+<body>
+  <header class="header">
+   <p class="header-list-1">Курси</p>
+   <p class="header-list-2">Увійти</p>
+   <p class="header-list-3">Зареєструватись</p>  
+  </header>
+
+  <main class="page">
+   <div class="hero">
+      <h1 class="big-title title">
+         Робота зі шрифтами та їх властивостями
+      </h1>
+   </div>
+
+   <div class="first-section"> 
+    <p>
+      Шрифти суттєво впливають на тон і читабельність веб-сторінки. Основні властивості включають:
+    </p>
+     <ul class="properties">
+       <li class="item"><a href="#color-property">color (колір)</a></li>
+       <li class="item"><a href="#font-family-property">font-family (шрифт)</a></li>    
+       <li class="item"><a href="#font-size-property">font-size (розмір)</a></li>
+       <li class="item"><a href="#text-align-property">text-align (вирівнювання)</a></li>     
+       <li class="item"><a href="#line-height-property">line-height (міжрядковий інтервал)</a></li>
+     </ul>
+   </div>
+
+   <div class="second-section">
+      <h2 class="title">
+         Ключові властивості CSS для оформлення тексту:
+      </h2>
+      <div class="properties-detail">
+         <div class="color-box text">
+            <h3 id="color-property" class="property-name">Колір:</h3>
+         <p>
+            CSS властивість <mark>color</mark> використовується для визначення кольору тексту в межах елемента.
+         </p>
+            <ul class="color-property-menu">
+               <li>
+               <span class="color-item color-name">Іменовані кольори:</span>
+                <p>Можна використовувати іменовані кольори, такі як red, blue, green і т.д. Існує близько 140 іменованих кольорів, які підтримуються браузерами.</p>
+               <p class="blue-text">Це речення синього кольору</p>
+               </li>
+               <li>
+               <span class="color-item">HEX-коди:</span>
+                <p>Можна використовувати HEX-коди, що представляють кольори у шістнадцятковій системі. Наприклад, #ff0000 представляє червоний колір, #00ff00 – зелений, #0000ff – синій.</p>
+               <p class="red-text">Це речення червоного (#ff0000) кольору</p>
+               </li> 
+               
+               <li>
+               <span class="color-item">RGB-коди:</span>
+                <p>Можна використовувати RGB-коди, що визначають кольори на основі значень червоного (red), зеленого (green) та синього (blue) компонентів. Наприклад, rgb(255, 0, 0) представляє червоний колір, rgb(0, 255, 0) – зелений, rgb(0, 0, 255) – синій.</p>
+               <p class="green-text">Це речення зеленого (rgb(0, 255, 0)) кольору</p>
+               </li>
+               
+               <li>
+                <span class="color-item">RGBA-коди:</span>
+               <p>Можна використовувати RGBA-коди, які є розширеним варіантом RGB-кодів та дозволяють вказати прозорість (альфа-канал). Наприклад, rgba(255, 0, 0, 0.5) представляє напівпрозорий червоний колір.</p>
+               <p class="semitransparent-red">Це речення напівпрозорого червоного  (rgba(255, 0, 0, 0.5)) кольору</p>
+               </li>
+               
+               <li>
+               <span class="color-item text">HSL-коди:</span>
+               <p>Можна використовувати HSL-коди, що визначають кольори на основі відтінку (hue), насиченості (saturation) та світлості (lightness). Наприклад, hsl(0, 100%, 50%) представляє червоний колір, hsl(120, 100%, 50%) – зелений, hsl(240, 100%, 50%) – синій.</p>
+               <p class="another-green-text">Це речення зеленого (hsl(120, 100%, 50%)) кольору</p>
+               </li>
+
+               <li>
+               <span class="color-item">HSLA-коди</span>
+               <p>Можна використовувати HSLA-коди, які є розширеним варіантом HSL-кодів та дозволяють вказати прозорість (альфа-канал). Наприклад, hsla(0, 100%, 50%, 0.5) представляє напівпрозорий червоний колір.</p>
+               <p class="another-semitransparent-text">Це речення напівпрозорого червоного (hsla(0, 100%, 50%, 0.5)) кольору</p>
+            </li>
+             </ul>
+         <img src="img/colors-screenshot.jpg" alt="css colors">
+         </div>
+
+         <div class="font-family-box text">
+          <h3 id="font-family-property" class="property-name">Font-family</h3>  
+            <p>Ця властивість дозволяє встановлювати сімейство шрифтів (його назву, за допомогою якої далі в коді можна викликати шрифт). <br> <mark>font-family</mark> приймає список різних сімейств шрифтів. Це відбувається тому, що не всі користувачі матимуть ті ж шрифти, що встановлені на Вашому комп'ютері. Тому, як дизайнер / розробник, ви можете надати список шрифтів, щоб хоча б якийсь шрифт завантажився у більшості користувачів.
+            </p> 
+            <p>
+               Коли браузер зустрічає перший шрифт у списку, він перевіряє його наявність на комп'ютері користувача. Якщо такого шрифту немає, береться наступне ім'я зі списку і також аналізується на присутність. Тому кілька шрифтів збільшує ймовірність, що хоча б один з них буде виявлений на клієнтському комп'ютері. Закінчують список зазвичай ключовим словом, яке описує тип шрифту - serif, sans-serif, cursive, fantasy або monospace. Таким чином, послідовність шрифтів краще починати з екзотичних типів і закінчувати узагальненим ім'ям, яке задає вид накреслення.
+            </p>
+            <img src="img/web-safe-html-css-fonts-1-20241216-7934152.jpeg" alt="types of web fonts">
+         </div>
+
+         <div class="font-size-box text">
+            <h3 id="font-size-property" class="property-name">Font-size</h3>
+            <p>
+               CSS-властивість font-size визначає розмір шрифту тексту, задаючи висоту від базової лінії до верхнього краю. Вона дозволяє масштабувати текст, використовуючи абсолютні (px, pt) або відносні (em, rem, %) одиниці, що критично важливо для веб-дизайну та доступності.
+            </p>
+            <p class="text-px">
+               Цей текст розміром 20 px
+            </p>
+            <p class="text-pt">
+               Цей текст розміром 18 pt
+            </p>
+            <p class="text-percent">
+               Цей текст розміром 35%
+            </p>
+            <p class="text-rem">
+               Цей текст розміром 5 rem
+            </p>
+            <img src="img/font-size_different-units_thumb.png" alt="Font size picture">
+         </div>
+
+         <div class="text-align-box text">
+            <h3 id="text-align-property" class="property-name">Text-align</h3>
+            <p>
+               CSS-властивість text-align визначає горизонтальне вирівнювання рядкового вмісту (тексту, зображень) всередині блочного елемента. Основні значення: left (ліворуч), right (праворуч), center (по центру) та justify (по ширині). Вона впливає на нащадки елемента і не успадковується для блочних елементів. 
+            </p>
+            <div class="align">
+            <p class="text-left">
+               Цей текст розташований праворуч
+            </p>
+            <p class="text-right">
+               Цей текст розташований праворуч
+            </p>
+            <p class="text-center">
+               Цей текст розташований по центру
+            </p>
+            <p class="text-justify">
+               Цей текст розташований по ширині
+            </p>
+            </div>
+         </div>
+
+         <div class="line-height-box text">
+            <h3 id="line-height-property" class="property-name">Line-height</h3>
+            <p>
+               CSS-властивість line-height задає міжрядковий інтервал (інтерліньяж) — відстань між базовими лініями сусідніх рядків тексту. Вона регулює висоту рядків, впливаючи на читабельність. Рекомендується використовувати відносні значення (числа без одиниць, наприклад, 1.5) для кращої адаптивності та масштабування.
+            </p>
+            <ul class="line-height-menu">
+               <li class="line-height-item">
+            <p class="fz-multiply-lh word-space">
+               <mark>line-height: 3;</mark>  Число множиться на поточний розмір шрифту (font-size). Якщо font-size: 16px, то line-height: 3 дасть висоту рядка 48 px. <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, quasi fuga culpa sed minus recusandae iure ducimus id ipsum. Quidem ipsam accusamus eius dolorem maxime impedit totam! Porro, veritatis cum!
+            </p>
+            </li>
+            <li class="line-height-item">
+               <p class="line-height-percent capital-letters">
+                  <mark>Відсотки (%):</mark> line-height: 350%;. Відсоток від розміру шрифту. Працює схоже до множника, але може успадковуватися інакше. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi itaque voluptates nesciunt reprehenderit enim tempore, odit soluta, laudantium distinctio beatae similique quis numquam ad nulla impedit. Dolor iusto earum atque.
+               </p>
+            </li>
+             <li class="line-height-item">
+               <p class="length">
+                  <mark>Довжина (px, em, pt):</mark> line-height: 12px;. Фіксована висота. Не рекомендується для адаптивного дизайну, оскільки не змінюється при зміні розміру шрифту. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis veniam rerum tenetur laborum explicabo. Expedita explicabo, labore corrupti voluptas ipsum aperiam harum dignissimos dolorum deleniti laboriosam voluptatibus assumenda incidunt facilis.
+               </p>
+             </li>
+            </ul>
+         </div>
+      </div>
+  </main>
+<div class="agrolink">
+<h4 class="agrolink-title"><span class="thin-word">Grown</span> <span class="thick-word">by Nature</span></h4> 
+  <p class="article">We grow our crops naturally. We are a fast-growing <br> agricultural technology company passionate about <br>ensuring food security. We leverage our technology <br> to improve productivity & sales to promote food <br>security for you and your family.</p> 
+  </div>
+
+  <footer class="footer">
+   <p>Контакти</p> 
+   <p>Відгуки</p>
+   <p>Курси</p>
+   </footer>
+</body>
+
+</html>
