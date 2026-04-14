@@ -9,7 +9,7 @@ h1 {
 .list {
    font-family: Manrope, serif;
    font-weight: 700;
-   font-size: 26;
+   font-size: 26px;
    color: darkslateblue;
    line-height: 1.5;
 }
@@ -210,10 +210,10 @@ h1 {
    font-weight: 600;
    font-size: 50px;
    color: rgb(164, 44, 44);
-   text-underline-offset: 1;
+   text-underline-offset: 1px;
    text-align: center;
 }
-h4 {
+.subtitle {
    font-family: "Poppins", serif;
    font-weight: 600;
    font-size: 16px;
@@ -248,14 +248,14 @@ h4 {
    background-color: #FFF3E3;
 }
 .link {
-font-weight: 700;
-text-transform: uppercase;
-margin-left: 75px;
-padding: 25px 72px;
-background-color: #B88E2F;
-margin-bottom: 44.26px;
-display: inline-block;
-color: white;
+   font-weight: 700;
+   text-transform: uppercase;
+   margin-left: 75px;
+   padding: 25px 72px;
+   background-color: #B88E2F;
+   margin-bottom: 44.26px;
+   display: inline-block;
+   color: white;
 }
 .link-up {
    display: block;
