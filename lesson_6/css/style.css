@@ -1,5 +1,5 @@
 h1,
-h2 {
+.homework {
     font-family: Poppins, sans-serif;
     font-size: 32px;
     font-weight: 700;
@@ -194,7 +194,12 @@ main {
     border-radius: 12px;
     margin-bottom: 60px;
 }
-h3 {
+.homework h2 {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+.container h3 {
     /* font-family: Barlow, sans-serif; */
     font-weight: 500;
     font-size: 24px;
@@ -246,63 +251,69 @@ h3 {
     margin-bottom: 35px;
 }
 .furniro {
-    max-width: 1440px;
     min-height: 316px;
     background: url("../img/Rectangle\ 1.svg");
-    margin-left: 30px;
+    /* margin-left: 30px; */
     margin-bottom: 30px;
     font-family: Poppins, sans-serif;
+    text-align: center;
 }
 .logo {
     margin: 61px 681px 1px 682px;
     margin-bottom: 1px;
 }
-h4 {
+.furniro h2 {
     /* font-family: Poppins, sans-serif; */
     font-weight: 500;
     font-size: 48px;
     margin: 0 603px 7px 604px;
+    line-height: auto;
 }
 .link {
     display: inline-block;
     /* font-family: Poppins, sans-serif; */
     font-weight: 500;
-    margin: 1px 0 0 660px;
+    /* margin: 1px 0 0 660px; */
 }
 .arrow {
     display: inline-block;
-    margin-left: 6px;
+    /* margin-left: 6px; */
     vertical-align: middle;
     font-weight: 300;
 }
 .web {
-    max-width: 1440px;
     min-height: 342px;
     background: url("../img/designer.svg");
-    margin-left: 30px;
+    background-size: cover;
+    text-align: center;
+    background-color: black;
 }
 
-h5 {
+.web h2 {
     font-family: Barlow, sans-serif;
     font-weight: 700;
     font-size: 54px;
     text-transform: uppercase;
     line-height: 150%;
     padding-top: 94px;
-    padding-left: 501px;
+    /* padding-left: 501px; */
     margin-bottom: 17px;
     color: #F9EFEC;
 }
-.application {
-    display: block;
-    max-width: 235px;
+.button {
+    /* display: block; */
+    width: 235px;
     font-family: Roboto-flex, sans-serif;
     font-weight: 500;
-    padding: 13px 78px;
+    text-transform: capitalize;
+    line-height: 150%;
+    /* padding: 13px 78px; */
+    letter-spacing: 0%;
     background-color: #0A84FF;
     color: #FFFFFF;
     border-radius: 12px;
-    margin-left: 598px;
+    margin-left: auto;
+    margin-right: auto;
 }
 header,
 footer {
